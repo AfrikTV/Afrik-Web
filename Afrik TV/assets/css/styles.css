@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* HOMEPAGE */
+
+.homepage {
+    background-color: #F9BF3A14;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 75px 0px 75px;
+}
+
+logo img {
+    height: 45px;
+}
+
+.head-links {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.head-links a {
+    margin-right: 50px;
+}
+
+.head-links p {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #07092C;
+    margin-top: 9px;
+}
+
+.signin-link p {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 14px 40px;
+    border-radius: 9px;
+}
+
+.signin-link p:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 14px 40px;
+    border: 1px solid #000000;
+}
+
+.first-section {
+    margin-top: 65px;
+}
+
+.maintext-x-images {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.hp-images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hp-img1,
+.hp-img2,
+.hp-img3 {
+    margin-right: 75px;
+}
+
+.hp-img1,
+.hp-img3 {
+    margin-top: 90px;
+}
+
+p.hpm {
+    font-weight: 900;
+    font-size: 60px;
+    color: #07092C;
+    font-family: 'Inter', sans-serif;
+    margin: 0px 75px;
+    margin-top: 90px;
+}
