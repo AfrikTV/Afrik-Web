@@ -1,0 +1,13 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center center;
+}
+body, h1, h2, h3, h4, h5, h6, p, b, a, input, button, label, div{
+    font-family: Poppins;
+}
