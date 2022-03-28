@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #f8f9fa;
+}
+
+body * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 8px;
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+
+nav .las:before {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+section.container {
+    display: flex;
+}
+
+aside {
+    min-width: 200px;
+    padding: 0 20px;
+}
+
+main {
+    padding: 0 40px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+}
+
+#navigation li {
+    margin-bottom: 30px;
+}
+
+#navigation li:last-of-type {
+    margin: 0;
+}
+
+#navigation a {
+    padding: 10px 15px;
+    line-height: 1.5;
+    display: block;
+    border-radius: 10px;
+    color: #757984;
+}
+
+#navigation li a:before {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    position: relative;
+    top: 3px;
+    margin-right: 8px;
+}
+
+#navigation li.active a {
+    font-weight: bold;
+    color: #000;
+    background: rgba(6, 8, 37, 0.03);
+}
+
+#navigation li a:hover {
+    font-weight: bold;
+    color: #000;
+    background: rgba(6, 8, 37, 0.03);
+}
+
+#current-plan {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4ch;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+#activity {
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4ch;
+    width: 80%;
+}
+
+#current-plan div {
+    width: 360px;
+    padding: 30px;
+    min-height: 150px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+#current-plan div:nth-of-type(1) {
+    background-color: #07092C;
+    background-image: url("../images/path.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: 110px;
+}
+
+#current-plan div:nth-of-type(2) {
+    background-color: #492406;
+    background-image: url("../images/path.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: 110px;
+}
+
+.chart {
+    margin-top: 20px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0 100px 199px rgba(206, 206, 206, 0.07), 0 64.8148px 116.544px rgba(206, 206, 206, 0.0531481), 0 38.5185px 63.3852px rgba(206, 206, 206, 0.0425185), 0 20px 32.3375px rgba(206, 206, 206, 0.035), 0 8.14815px 16.2148px rgba(206, 206, 206, 0.0274815), 0 1.85185px 7.83102px rgba(206, 206, 206, 0.0168519);
+    border-radius: 23px;
+    padding: 40px;
+    border: none;
+}
+
+.chart-card {
+    display: flex;
+}
+
+.chart-card .left span {
+    color: #3575FF;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: bold;
+    background: #e1ebff;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.library {
+    background: #f1f1f1;
+    border-radius: 23px;
+    padding: 40px 60px;
+    height: 90%;
+    margin-top: 20px;
+}
+
+.library ul {
+    padding: 0;
+    list-style: none;
+}
+
+.library ul li {
+    display: block;
+}
+
+.library ul li a {
+    padding: 10px 15px;
+    line-height: 1;
+    display: block;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.library ul li {
+    margin-bottom: 20px;
+}
+
+.library ul li a:hover {
+    font-weight: bold;
+    color: inherit;
+    background: #fff;
+}
+
+.library ul li.active a {
+    font-weight: bold;
+    color: #000;
+    background: rgba(6, 8, 37, 0.03);
+}
+
+.library ul li i {
+    background: #e0e2f8;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 2rem;
+    line-height: 1;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+
+.user-icon {
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+}
+
+.right p.bold {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#plans {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+}
