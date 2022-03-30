@@ -1,0 +1,18 @@
+# dotenv environment variable files
+.env
+.env.development
+.env.test.local
+.env.production.local
+.env.production
+.env.local
+
+#node related items
+node_modules/
+logs/
+
+#logs & lock files
+*.log
+*.lock
+
+#phpstorm folder
+.idea
