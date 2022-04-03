@@ -6,7 +6,7 @@ import DownloadFromAppstore from "../../../public/download-from-appstore.png";
 import DownloadFromPlaystore from "../../../public/download-from-playstore.png";
 const Hero = () => {
   return (
-    <section className="py-20 lg:px-10 px-4">
+    <section className="py-20 px-10 px-4">
       <div className="hero-container flex justify-between items-start lg:items-center lg:flex-row flex-col ">
         <div className="hero-content">
           <h1 className="hero-title   text-4xl text-primary font-extrabold lg:text-6xl leading-tight md:leading-none ">

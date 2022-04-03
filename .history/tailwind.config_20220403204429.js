@@ -9,10 +9,9 @@ module.exports = {
         primary: "#07092C",
       },
 
-      fontFamily: {
-        inter: ["Inter var", "sans-serif"],
-        AnonymousPro: ["Anonymous Pro", "monospace"],
-      },
+    
+
+      }
     },
 
     plugins: [],

@@ -8,7 +8,7 @@ const signin = (props) => {
       <div className="signin-container flex  ">
         <div className="background-image w-full lg:flex hidden items-center justify-center h-screen p-10 bg-[#060825] text-white">
           <div className="content flex flex-col">
-            <h1 className=" auth-connect-heading ">
+            <h1 className="text-5xl font-bold leading-loose font-AnonymousPro connect-heading ">
               Connect
               <br />
               with Amazing <br /> Africa Movies

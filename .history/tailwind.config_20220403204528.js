@@ -13,6 +13,8 @@ module.exports = {
         inter: ["Inter var", "sans-serif"],
         AnonymousPro: ["Anonymous Pro", "monospace"],
       },
+
+      }
     },
 
     plugins: [],

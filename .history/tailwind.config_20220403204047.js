@@ -10,9 +10,10 @@ module.exports = {
       },
 
       fontFamily: {
-        inter: ["Inter var", "sans-serif"],
-        AnonymousPro: ["Anonymous Pro", "monospace"],
+        sans: ["Inter var", "sans-serif"],
       },
+      
+      }
     },
 
     plugins: [],

@@ -3,8 +3,8 @@ import "../styles/globals.css";
 import Layout from "../components/layouts";
 
 function MyApp({ Component, pageProps, ...appProps }) {
-  // removed the header and footer from the layout for auth pages
-  const isLayoutNeeded = [`/signin`].includes(appProps.router.pathname);
+  // removed  
+  const isLayoutNeeded = [`/esignin`].includes(appProps.router.pathname);
 
   const LayoutComponent = !isLayoutNeeded ? Layout : React.Fragment;
 

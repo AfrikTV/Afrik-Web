@@ -6,17 +6,15 @@ const signin = (props) => {
   return (
     <div className="h-screen ">
       <div className="signin-container flex  ">
-        <div className="background-image w-full lg:flex hidden items-center justify-center h-screen p-10 bg-[#060825] text-white">
-          <div className="content flex flex-col">
-            <h1 className=" auth-connect-heading ">
+        <div className="background-image w-full  h-screen p-10 bg-[#060825] text-white">
+          <div className="content">
+            <h1 className="text-5xl font-bold leading-loose font-AnonymousPro ">
               Connect
               <br />
               with Amazing <br /> Africa Movies
             </h1>
 
-            <div className="user-image self-center py-5">
-              <Image src={userImg} alt="user" />
-            </div>
+            <Image src={userImg} alt="user" />
           </div>
         </div>
 

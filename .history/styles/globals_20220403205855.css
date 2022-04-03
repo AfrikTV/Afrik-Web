@@ -9,7 +9,7 @@ body {
   /* filter: blur(450px); */
   background-repeat: no-repeat;
 }
-@layer components {
+@layer {
   .auth-screen-heading {
     @apply font-black text-3xl py-4;
   }
