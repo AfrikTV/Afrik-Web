@@ -8,9 +8,6 @@ import PhotoGridOne from "../../../public/photogrid1.png";
 import PhotoGridTwo from "../../../public/photogrid2.png";
 import PhotoGridThree from "../../../public/photogrid3.png";
 import AmapianoImage from "../../../public/amapainoImage.png";
-import LocalOneImage from "../../../public/local1.png";
-import LocalTwoImage from "../../../public/local2.png";
-import LocalThreeImage from "../../../public/local3.png";
 
 import Button from "../../elements/Button";
 const Hero2 = () => {
@@ -100,23 +97,22 @@ const Hero2 = () => {
       </div>
 
       <div className="best-loca font-inter">
-        <h1 className=" text-primary font-black text-5xl my-16">
-          Best of Local
+        <h1 className=" text-primary font-black text-5xl my-20">
+         Best of Local
         </h1>
 
+
         <div className="movie-row">
-          <div className="movie-card flex space-x-4">
+
+
+          <div className="movie-card">
             <div className="movie-image">
-              <Image src={LocalOneImage} alt="hero-image" />
+              <Image src={UserImg} alt="hero-image" />
             </div>
-            <div className="movie-image">
-              <Image src={LocalTwoImage} alt="hero-image" />
             </div>
-            <div className="movie-image">
-              <Image src={LocalThreeImage} alt="hero-image" />
-            </div>
-          </div>
         </div>
+
+
       </div>
 
       <div className="amapiano">
@@ -124,16 +120,16 @@ const Hero2 = () => {
           The Amapiano
         </h1>
 
-        <div className="discover grid grid-cols-1  lg:grid-cols-2 gap-1 lg:gap-32 items-center">
+        <div className="discover grid grid-cols-1  lg:grid-cols-3 gap-1 lg:gap-32 items-center">
           <div className="discover-image   ">
             <Image src={AmapianoImage} alt="hero-image" />
           </div>
 
-          <div className="discover-text ">
-            <h2 className="text-5xl font-black  text-primary tracking-tighter ">
+          <div className="discover-text col-span-2 ">
+            <h2 className="text-5xl font-black  text-primary ">
               Hot Amazing African
-              <br />
-              songs
+              <br>
+              </br>
             </h2>
             <p className="font-semibold text-xl py-5">
               Whether you want to stream live TV or catch up on your <br />{" "}

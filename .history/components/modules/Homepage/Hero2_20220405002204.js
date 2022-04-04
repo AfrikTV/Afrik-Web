@@ -12,6 +12,9 @@ import LocalOneImage from "../../../public/local1.png";
 import LocalTwoImage from "../../../public/local2.png";
 import LocalThreeImage from "../../../public/local3.png";
 
+
+import 
+
 import Button from "../../elements/Button";
 const Hero2 = () => {
   return (
@@ -100,21 +103,16 @@ const Hero2 = () => {
       </div>
 
       <div className="best-loca font-inter">
-        <h1 className=" text-primary font-black text-5xl my-16">
+        <h1 className=" text-primary font-black text-5xl my-20">
           Best of Local
         </h1>
 
         <div className="movie-row">
-          <div className="movie-card flex space-x-4">
+          <div className="movie-card">
             <div className="movie-image">
               <Image src={LocalOneImage} alt="hero-image" />
             </div>
-            <div className="movie-image">
-              <Image src={LocalTwoImage} alt="hero-image" />
-            </div>
-            <div className="movie-image">
-              <Image src={LocalThreeImage} alt="hero-image" />
-            </div>
+           
           </div>
         </div>
       </div>

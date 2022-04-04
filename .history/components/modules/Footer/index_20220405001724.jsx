@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div className="font-inter subscribe-newsletter bg-[#060825] py-10 px-10 font-inter text-center ">
+      <div className="font-subscribe-newsletter bg-[#060825] py-10 px-10 font-inter text-center ">
         <h1 className="text-white font-bold text-4xl ">
           Subscribe to our newsletter
         </h1>
