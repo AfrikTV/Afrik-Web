@@ -66,7 +66,7 @@ const Hero2 = () => {
 
         <div className="discover my-10  grid grid-cols-1  lg:grid-cols-3 gap-1 lg:gap-32 items-center py-10">
           <div className="discover-text col-span-2">
-            <h2 className="text-4xl lg:text-5xl font-black  text-primary ">
+            <h2 className="text-4xllg:text-5xl font-black  text-primary ">
               Discover the Best Entertainment
             </h2>
             <p className="font-semibold text-xl py-5">
@@ -100,7 +100,7 @@ const Hero2 = () => {
       </div>
 
       <div className="best-loca font-inter">
-        <h1 className=" text-primary font-black text-4xl lg:text-5xl my-16">
+        <h1 className=" text-primary font-black text-5xl my-16">
           Best of Local
         </h1>
 
@@ -120,7 +120,7 @@ const Hero2 = () => {
       </div>
 
       <div className="amapiano">
-        <h1 className=" text-primary font-black text-4xl lg:text-5xl my-20 font-inter">
+        <h1 className=" text-primary font-black text-5xl my-20 font-inter">
           The Amapiano
         </h1>
 

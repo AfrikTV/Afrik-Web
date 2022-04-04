@@ -5,17 +5,15 @@
 @tailwind utilities;
 
 body {
-  background: rgba(249, 191, 58, 0.08);
-  background-image: url('../public/bg.svg');
-
+  /* background: rgba(249, 191, 58, 0.08); */
   /* filter: blur(450px); */
   background-repeat: no-repeat;
 }
 
 .hero-container{
-
+  background-image: url('../public/bg.svg');
   background-size: cover;
- 
+  background-position: center;
   background-repeat: no-repeat;
 }
 @layer components {

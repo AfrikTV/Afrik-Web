@@ -6,16 +6,7 @@
 
 body {
   background: rgba(249, 191, 58, 0.08);
-  background-image: url('../public/bg.svg');
-
   /* filter: blur(450px); */
-  background-repeat: no-repeat;
-}
-
-.hero-container{
-
-  background-size: cover;
- 
   background-repeat: no-repeat;
 }
 @layer components {
@@ -29,6 +20,5 @@ body {
   .auth-connect-heading {
     @apply text-5xl font-bold leading-loose font-AnonymousPro;
   }
-
-
+  
 }

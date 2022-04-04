@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "c":
+        "hero-pattern":
           "url('./public/bg.svg')",
       }),
       colors: {

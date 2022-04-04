@@ -100,7 +100,7 @@ const Hero2 = () => {
       </div>
 
       <div className="best-loca font-inter">
-        <h1 className=" text-primary font-black text-4xl lg:text-5xl my-16">
+        <h1 className=" text-primary font-black text-4xl text-5xl my-16">
           Best of Local
         </h1>
 
@@ -120,7 +120,7 @@ const Hero2 = () => {
       </div>
 
       <div className="amapiano">
-        <h1 className=" text-primary font-black text-4xl lg:text-5xl my-20 font-inter">
+        <h1 className=" text-primary font-black text-5xl my-20 font-inter">
           The Amapiano
         </h1>
 

@@ -5,10 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        "c":
-          "url('./public/bg.svg')",
-      }),
+       backgroundImage: theme => ({
+         'hero-pattern': "url('./public//bg.svg')",
+         'footer-texture': "url('/img/footer-texture.png')",
+        }),
       colors: {
         primary: "#07092C",
         secondary: "#F39C11",
