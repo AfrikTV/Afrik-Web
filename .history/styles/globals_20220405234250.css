@@ -13,10 +13,10 @@ body {
 
 .hero-container{
 
-  /* background-size: cover; */
+  background-size: cover;
  
   background-repeat: no-repeat;
-  /* background-image: url('../public/bg.svg'); */
+  background-image: url('../public/bg.svg');
 
 }
 @layer components {

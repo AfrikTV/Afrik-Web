@@ -17,11 +17,10 @@ const Hero = () => {
 
           <div className="download flex py-16 space-x-4 mx-auto">
             <div className="download-from-appstore">
-              <Image
-                src={DownloadFromAppstore}
+              <Image src={DownloadFromAppstore}
+              
                 blurDataURL={HeroImage}
-                alt="Download from appstore"
-              />
+                alt="Download from appstore" />
             </div>
 
             <div className="download-from-playstore">
@@ -38,8 +37,7 @@ const Hero = () => {
             <Image
               src={HeroImage}
               alt="hero image"
-              blurDataURL={HeroImage}
-              placeholder="blur"
+            blurDataURL=
               className="self-end"
             />
           </div>
@@ -48,8 +46,7 @@ const Hero = () => {
             <Image
               src={HeroImage2}
               alt="hero image"
-              blurDataURL={HeroImage2}
-              placeholder="blur"
+              unoptimized
               className="self-end"
             />
           </div>

@@ -3,9 +3,7 @@ import React from 'react'
 const FAQ = () => {
   return (
     <div>
-      <h1>
-        Got Questions? <span className="text-">Look Here</span>
-      </h1>
+      <h1>Got Questions? <span className="text-"Look Here</h1>
     </div>
   );
 }
