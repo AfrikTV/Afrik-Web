@@ -4,7 +4,7 @@ import data from "./data";
 import SingleQuestion from "./Question";
 
 const Index = () => {
-  const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useState(data);
 
   return (
     <main>
@@ -19,4 +19,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Accordion;

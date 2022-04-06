@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "../../elements/Accordion/Index";
+import Accordion from "../../elements/Accordion";
 
 const FrequentlyAskedQuestion = () => {
   return (

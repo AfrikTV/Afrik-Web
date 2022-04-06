@@ -3,7 +3,7 @@ import { useState } from "react";
 import data from "./data";
 import SingleQuestion from "./Question";
 
-const Index = () => {
+const index = () => {
   const [questions, setQuestions] = useState([]);
 
   return (
@@ -19,4 +19,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default index;
