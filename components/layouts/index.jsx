@@ -6,17 +6,14 @@ import Header from "../modules/Header";
 const Layout = ({ children }) => {
   return (
     <>
-    <div className="max-w-[90rem] mx-auto lg:px-10">
-      <Header />
+      <div className="max-w-[90rem] mx-auto lg:px-10 layout">
+        <Header />
 
-      <main className=" ">{children}</main>
-
-    </div>
+        <main className=" ">{children}</main>
+      </div>
 
       <Footer />
-
-      </>
-    
+    </>
   );
 };
 

@@ -6,8 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "c":
-          "url('./public/bg.svg')",
+        c: "url('./public/bg.svg')",
       }),
       colors: {
         primary: "#07092C",
@@ -19,7 +18,6 @@ module.exports = {
         AnonymousPro: ["Anonymous Pro", "monospace"],
       },
     },
-
-    plugins: [],
   },
+  plugins: [require("tailwind-scrollbar")],
 };

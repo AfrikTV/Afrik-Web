@@ -13,6 +13,7 @@ const SidebarItem = ({
   return (
     <Link href={href} passHref>
       <div
+        title={text}
         onClick={onClick}
         className={
           "flex items-center space-x-2 py-2 px-4 rounded-lg hover:bg-gray-100 cursor-pointer " +
@@ -22,7 +23,8 @@ const SidebarItem = ({
         <>{children}</>
         <p
           className={
-            "font-medium group-hover:text-[#07092C] " + textCustomStyle
+            "font-medium hidden sm:inline-flex group-hover:text-primary " +
+            textCustomStyle
           }
         >
           {text}

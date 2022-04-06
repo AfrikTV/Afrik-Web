@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.layout {
   background: rgba(249, 191, 58, 0.08);
   background-image: url('../public/bg.svg');
 
@@ -31,4 +31,24 @@ body {
   }
 
 
+}
+
+.wavy {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+
+}
+
+.wavy__text {
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  color: transparent;
+  opacity: 6%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: scaleX(2);
 }
