@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
     getUser();
   }, [dispatch]);
   return (
-    <div className="h-screen max-w-[90rem] mx-auto px-10">
+    <div className="h-screen max-w-[90rem] mx-auto px-10 bg-white">
       {/* Navbar */}
       <Navbar img={user.avatar} />
 
