@@ -7,9 +7,17 @@ const Navbar = () => {
   const { user } = useSelector((state) => state.loggedReducer);
   return (
     <div className="flex items-center justify-between py-5">
-      <Image src={logo} alt="Afrik Web Logo" unoptimized />
+      <Image
+        className="cursor-pointer"
+        src={logo}
+        alt="Afrik Web Logo"
+        unoptimized
+      />
       <div className="flex items-center space-x-4">
-        <div>
+        <div className="relative cursor-pointer">
+          <div className="absolute right-0 top-0 bg-red-500 w-5 h-5 flex items-center justify-center text-white font-bold rounded-full animate-pulse">
+            8
+          </div>
           <IoMdNotificationsOutline className="text-5xl" />
         </div>
         <div className="">
