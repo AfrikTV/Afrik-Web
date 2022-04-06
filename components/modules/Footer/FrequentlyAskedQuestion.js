@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "../../elements/Accordion";
 
-const FAQ = () => {
+const FrequentlyAskedQuestion = () => {
   return (
     <div className="py-10 font-inter">
       <h1 className="text-center text-3xl py-10 text-white font-black ">
@@ -28,4 +28,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FrequentlyAskedQuestion;
