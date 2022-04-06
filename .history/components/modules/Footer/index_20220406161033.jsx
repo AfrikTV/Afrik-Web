@@ -4,7 +4,7 @@ import FAQ from "./FAQ.js";
 const Footer = () => {
   return (
     <footer>
-      <div className="faq bg-[#07092C]">
+      <div className="faq bg--[#07092C">
         <FAQ />
       </div>
 

@@ -16,7 +16,7 @@ const FAQ = () => {
           />
         </div>
 
-        <button className="btn btn-primary font-bold bg-[#0B0E45] px-12 py-4 rounded-md text-white">
+        <button className="btn btn-primary font-bold bg-secondary px-12 py-4 rounded-md text-white">
           Search
         </button>
       </div>

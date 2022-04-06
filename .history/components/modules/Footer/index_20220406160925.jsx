@@ -4,8 +4,9 @@ import FAQ from "./FAQ.js";
 const Footer = () => {
   return (
     <footer>
-      <div className="faq bg-[#07092C]">
-        <FAQ />
+      <div className="faq">
+
+
       </div>
 
       <div className="font-inter  subscribe-newsletter bg-[#060825] py-10 px-5 text-center ">

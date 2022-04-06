@@ -3,7 +3,7 @@ import Accordion from "../../elements/Accordion";
 
 const FAQ = () => {
   return (
-    <div className="py-10 font-inter">
+    <div className="bg-[red py-10 font-inter">
       <h1 className="text-center text-3xl py-10 text-white font-black ">
         Got Questions? <span className="text-secondary">Look Here</span>
       </h1>
@@ -12,7 +12,7 @@ const FAQ = () => {
         <div className="bg-primary rounded-xl w-2/4">
           <input
             type="email"
-            className="input-field font-bold  text-white  rounded-xl placeholder-[#A7A7A7] w-full  px-10 py-4 outline-none"
+            className="input-field font-bold bg-[#0B0E45] text-white  rounded-xl placeholder-[#A7A7A7] w-full  px-10 py-4 outline-none"
           />
         </div>
 

@@ -12,7 +12,7 @@ const FAQ = () => {
         <div className="bg-primary rounded-xl w-2/4">
           <input
             type="email"
-            className="input-field font-bold  text-white  rounded-xl placeholder-[#A7A7A7] w-full  px-10 py-4 outline-none"
+            className="input-field font-bold bg-secondary text-white  rounded-xl placeholder-[#A7A7A7] w-full  px-10 py-4 outline-none"
           />
         </div>
 
