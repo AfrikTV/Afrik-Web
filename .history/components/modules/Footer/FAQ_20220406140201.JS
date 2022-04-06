@@ -1,0 +1,35 @@
+import React from "react";
+import Accordion from '../../elements/Accordion'
+
+const FAQ = () => {
+  return (
+    <div className="bg-[#07092C] py-10">
+      <h1 className="text-center text-3xl py-10 text-white font-black ">
+        Got Questions? <span className="text-secondary">Look Here</span>
+      </h1>
+
+      
+      <div className="faq ">
+<Accordion />
+
+      </div>
+      <div className="input-container flex  space-x-5 py-10 items-center justify-center px-5   w-full">
+        <div className="bg-white rounded-xl w-2/4">
+          <input
+            type="email"
+            className="input-field rounded-xl placeholder-[#A7A7A7] w-full  px-10 py-4 outline-none"
+           
+          />
+        </div>
+
+        <button
+          className="btn btn-primary bg-[#0B0E45] px-12 py-4 rounded-md text-white"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default FAQ;
