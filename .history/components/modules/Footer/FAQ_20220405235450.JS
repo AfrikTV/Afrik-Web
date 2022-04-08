@@ -2,8 +2,10 @@ import React from 'react'
 
 const FAQ = () => {
   return (
-    <div>FAQ</div>
-  )
+    <div>
+      <h1>Got Questions? <span clasLook Here</h1>
+    </div>
+  );
 }
 
 export default FAQ  
