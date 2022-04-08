@@ -20,7 +20,7 @@ function whoiswatching(props) {
         Who is Watching ?
       </h1>
       <div className=" mx-auto flex justify-center items-center">
-        <div className="availableprofile cursor-pointer grid  gap-8 grid-cols-2 lg:grid-cols-3 py-10 items-center mx-auto justify-center">
+        <div className="availableprofile cursor-pointer grid  gap-8 grid lg:grid-cols-3 py-10 items-center mx-auto justify-center">
           {availableprofile.map((i) => (
             <div key={i.name} className="">
               <Image src={i.image} alt={i.name} unoptimized />
