@@ -1,7 +1,15 @@
 import Head from "next/head";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import Billing from "../../components/modules/Dashboard/Billing";
+import { billing } from "../../store/actions/section";
 
 const Dashboard = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(billing());
+  }, [dispatch]);
   return (
     <div>
       <Head>

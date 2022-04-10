@@ -1,7 +1,15 @@
 import Head from "next/head";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import Home from "../../components/modules/Dashboard/Home";
+import { home } from "../../store/actions/section";
 
 const Dashboard = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(home());
+  }, [dispatch]);
   return (
     <div>
       <Head>

@@ -1,4 +1,4 @@
-const sectionReducer = (state = "home", action) => {
+const sectionReducer = (state = "", action) => {
   switch (action.type) {
     case "HOME":
       return "home";

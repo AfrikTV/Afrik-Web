@@ -21,16 +21,18 @@ const Layout = ({ children }) => {
     getUser();
   }, [dispatch]);
   return (
-    <div className="h-screen max-w-[90rem] mx-auto px-10">
+    <div className="flex flex-col h-screen max-w-[90rem] mx-auto px-10 overflow-x-hidden overflow-y-scroll scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-primary">
       {/* Navbar */}
       <Navbar img={user.avatar} />
 
       {/* Content */}
-      <div className="flex space-x-20">
+      <div className="flex sm:space-x-10 justify-center sm:justify-start">
         {/* Sidebar */}
         <Sidebar />
         {/* Main */}
-        <main className="">{children}</main>
+        <main className="flex flex-1 justify-center lg:justify-start">
+          {children}
+        </main>
       </div>
     </div>
   );
