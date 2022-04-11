@@ -1,8 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Hero from '../components/modules/Homepage/Hero'
+import Head from 'next/head';
+import Hero from '../components/modules/Homepage/Hero';
 import Hero2 from '../components/modules/Homepage/Hero2'
-
 
 
 export default function Home() {
@@ -18,11 +16,7 @@ export default function Home() {
       <Hero />
       <Hero2 />
       
-
-
-   
-
-   
+      
     </div>
   )
 }

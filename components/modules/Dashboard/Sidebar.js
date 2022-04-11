@@ -12,6 +12,7 @@ import {
 } from "../../../store/actions/section";
 import Link from "next/link";
 
+
 const Sidebar = () => {
   const currentSection = useSelector((state) => state.sectionReducer);
   const dispatch = useDispatch();

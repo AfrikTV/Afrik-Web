@@ -8,10 +8,12 @@ module.exports = {
       backgroundImage: (theme) => ({
         "c":
           "url('./public/bg.svg')",
+          "snake-bg" : "url('./public/assets/images/snake.svg')",
       }),
       colors: {
         primary: "#07092C",
         secondary: "#F39C11",
+        'greyColor': "rgba(171, 171, 171, 0.29)"
       },
 
       fontFamily: {

@@ -8,6 +8,8 @@ const sectionReducer = (state = "home", action) => {
       return "activities";
     case "SETTINGS":
       return "settings";
+    case "WATCH_LATER":
+      return "watchlater"
     default:
       return state;
   }
