@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         {/* Sidebar */}
         <Sidebar />
         {/* Main */}
-        <main className="">{children}</main>
+        <div className="dashboard-container">{children}</div>
       </div>
     </div>
   );

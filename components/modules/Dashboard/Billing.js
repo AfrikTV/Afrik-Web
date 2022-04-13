@@ -1,10 +1,12 @@
-import React from "react";
+import { useState } from "react";
 import arrow from "../../../public/assets/images/arrow.svg"
 import Image from "next/image";
 import { useRouter } from 'next/router'
 import { useSelector } from "react-redux";
+import AddNewCardModal from "../../elements/Modal/AddNewCard";
 
 const Billing = () => {
+  const [isOpen, setOpen] = useState(false);
   const { user } = useSelector((state) => state.loggedReducer);
   const router = useRouter();
 
@@ -16,11 +18,13 @@ const Billing = () => {
           <p className="text-xl font-bold">Billings</p>
         </div>
 
-        <div className="px-2 py-3 rounded-lg bg-greyColor">
-          <p className="text-sm font-bold w-max">Add Card</p>
+        <div onClick={() => setOpen(isOpen => !isOpen)} className="px-2 py-3 rounded-lg cursor-pointer bg-greyColor">
+          <p className="text-sm font-medium w-max " >Add Card</p>
         </div>
       </div>
       <p className="text-lg mb-5 font-medium">Active Cards</p>
+
+      {isOpen ? <AddNewCardModal setOpen={setOpen} /> : null}
 
       {/* Card */}
       <div className="mb-10 w-96 text-white  bg-['snake-bg'] bg-bottom bg-contain bg-[#07092C] px-14 py-10 rounded-lg justify-between align-center">
@@ -55,6 +59,7 @@ const Billing = () => {
       </div>
 
     </div>
+
   )
 };
 

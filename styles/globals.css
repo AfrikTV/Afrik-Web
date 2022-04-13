@@ -6,7 +6,6 @@
 
 body {
   background: rgba(249, 191, 58, 0.08);
-
   /* filter: blur(450px); */
   background-repeat: no-repeat;
 }
@@ -38,9 +37,21 @@ body {
   background-image: url('../public//assets//images/bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-main{
+ .dashboard-container{
   width: 100%;
+  padding-bottom: 1em;
+  margin-left: 214px !important;
+  background: #fff;
+} 
+
+.main{
+  padding-bottom: 1em;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

@@ -34,9 +34,10 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="grid grid-rows-5 gap-5">
+    <div className="flex flex-col items-center justify-center fixed bg-white h-[100vh] top-0 left-0 w-48 grid-rows-5 gap-5">
       <Link href={"/dashboard"} passHref>
         <SidebarItem
+        
           onClick={homeClick}
           customStyle={`row-start-2 group ${
             currentSection === "home" ? "bg-gray-50" : ""
@@ -47,7 +48,7 @@ const Sidebar = () => {
           }`}
         >
           <RiHomeSmile2Fill
-            className={`text-4xl group-hover:text-[#07092C] ${
+            className={`text-3xl group-hover:text-[#07092C] ${
               currentSection === "home" ? "text-[#07092C]" : "text-gray-500"
             }`}
           />
@@ -64,7 +65,7 @@ const Sidebar = () => {
           }`}
         >
           <AiFillCreditCard
-            className={`text-4xl group-hover:text-[#07092C] ${
+            className={`text-3xl group-hover:text-[#07092C] ${
               currentSection === "billing" ? "text-[#07092C]" : "text-gray-500"
             }`}
           />
@@ -81,7 +82,7 @@ const Sidebar = () => {
           }`}
         >
           <FiActivity
-            className={`text-4xl group-hover:text-[#07092C] ${
+            className={`text-3xl group-hover:text-[#07092C] ${
               currentSection === "activities"
                 ? "text-[#07092C]"
                 : "text-gray-500"
@@ -100,7 +101,7 @@ const Sidebar = () => {
           }`}
         >
           <RiSettingsFill
-            className={`text-4xl group-hover:text-[#07092C] ${
+            className={`text-3xl group-hover:text-[#07092C] ${
               currentSection === "settings" ? "text-[#07092C]" : "text-gray-500"
             }`}
           />

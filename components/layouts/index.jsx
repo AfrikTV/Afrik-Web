@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <div className="max-w-[90rem] mx-auto lg:px-10">
         <Header />
 
-        <main className=" ">{children}</main>
+        <div className="main">{children}</div>
       </div>
 
       <Footer />
