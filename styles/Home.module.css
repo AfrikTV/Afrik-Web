@@ -1,0 +1,10 @@
+.dropdown::after {
+    width: 0; 
+    height: 0; 
+    border-left: 55px solid transparent !important;
+    border-right: 55px solid transparent !important;
+    border-bottom: 35px solid red !important;
+  }
+
+
+  

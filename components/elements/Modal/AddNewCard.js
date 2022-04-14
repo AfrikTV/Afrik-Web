@@ -49,8 +49,6 @@ function AddNewCardModal({ isOpen, setOpen }) {
                 </div>
 
 
-
-
             </div>
         </div>
     )

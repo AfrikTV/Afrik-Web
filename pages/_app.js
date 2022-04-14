@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 
 function MyApp({ Component, pageProps, ...appProps }) {
   // removed the header and footer from the layout for auth pages
-  const isLayoutNeeded = [`/signin`, `/forgetpassword`  ,`/verify` , `/whoiswatching` , `/signup`].includes(
+  const isLayoutNeeded = [`/signin`, `/manageprofiles`, `/newprofile`, `/forgetpassword`  ,`/verify` , `/whoiswatching` , `/signup`].includes(
     appProps.router.pathname
   );
   // dashboard layout <<If there's a better way, you can implement it>>

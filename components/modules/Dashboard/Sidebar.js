@@ -34,7 +34,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center fixed bg-white h-[100vh] top-0 left-0 w-48 grid-rows-5 gap-5">
+    <div className="flex flex-col items-center justify-center fixed bg-white h-[100vh] top-20 left-0 w-48 grid-rows-5 gap-5">
       <Link href={"/dashboard"} passHref>
         <SidebarItem
         
@@ -58,7 +58,9 @@ const Sidebar = () => {
       <Link href={"/dashboard/billing"} passHref>
         <SidebarItem
           onClick={billingClick}
-          customStyle={"row-start-3 group"}
+          customStyle={`row-start-2 group ${
+            currentSection === "billing" ? "bg-gray-50" : ""
+          }`}
           text="Billing"
           textCustomStyle={`${
             currentSection === "billing" ? "text-[#07092C]" : "text-gray-500"
@@ -75,7 +77,9 @@ const Sidebar = () => {
       <Link href={"/dashboard/activities"} passHref>
         <SidebarItem
           onClick={activitiesClick}
-          customStyle={"row-start-4 group"}
+          customStyle={`row-start-2 group ${
+            currentSection === "activities" ? "bg-gray-50" : ""
+          }`}
           text="Activities"
           textCustomStyle={`${
             currentSection === "activities" ? "text-[#07092C]" : "text-gray-500"
@@ -94,7 +98,9 @@ const Sidebar = () => {
       <Link href={"/dashboard/settings"} passHref>
         <SidebarItem
           onClick={settingsClick}
-          customStyle={"row-start-5 group"}
+          customStyle={`row-start-2 group ${
+            currentSection === "settings" ? "bg-gray-50" : ""
+          }`}
           text="Settings"
           textCustomStyle={`${
             currentSection === "settings" ? "text-[#07092C]" : "text-gray-500"

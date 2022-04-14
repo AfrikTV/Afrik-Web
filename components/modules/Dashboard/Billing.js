@@ -40,18 +40,18 @@ const Billing = () => {
         <div className="flex flex-row w-5/6 flex-wrap gap-10 justify-between items-center">
           <div className="w-48 text-center p-5 rounded-xl shadow-2xl">
             <h1 className="mb-2 text-xl font-bold">Normal</h1>
-            <p>N300</p>
-            <p>Per Month</p>
+            <p className="font-medium text-[#050729]">N300</p>
+            <p className="font-medium text-[#050729]">Per Month</p>
+          </div>
+          <div className="w-48 text-center p-5 rounded-xl shadow-2xl">
+            <h1 className="mb-2 text-xl text-[#050729] font-bold">Normal</h1>
+            <p className="font-medium text-[#050729]">N300</p>
+            <p className="font-medium text-[#050729]">Per Month</p>
           </div>
           <div className="w-48 text-center p-5 rounded-xl shadow-2xl">
             <h1 className="mb-2 text-xl font-bold">Normal</h1>
-            <p>N300</p>
-            <p>Per Month</p>
-          </div>
-          <div className="w-48 text-center p-5 rounded-xl shadow-2xl">
-            <h1 className="mb-2 text-xl font-bold">Normal</h1>
-            <p>N300</p>
-            <p>Per Month</p>
+            <p className="font-medium text-[#050729]">N300</p>
+            <p className="font-medium text-[#050729]">Per Month</p>
           </div>
 
 
