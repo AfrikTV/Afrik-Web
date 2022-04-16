@@ -6,9 +6,13 @@ import contact from "../../../public/assets/images/contact.png"
 import arrowRight from "../../../public/assets/images/arrowRight.svg"
 import { useState } from "react";
 import ChangePasswordModal from "../../elements/Modal/ChangePassword";
+import ParentalControl from "../../elements/ParentControl";
+import AccountSettings from "../../AccountSettings";
 
 const Settings = () => {
+  const initial = "accountSetting";
   const [isOpen, setOpen] = useState(false);
+  const [isOption, setIsOption] = useState(initial);
   const router = useRouter();
   return (
     <div className="flex flex-row">
@@ -37,7 +41,7 @@ const Settings = () => {
 
             <div>
               <h1 className="font-bold">Account Settings</h1>
-              <p className="font-thin">Personal Information, Email</p>
+              <p className="font-thin text-sm">Personal Information, Email</p>
             </div>
 
           </div>
@@ -57,7 +61,7 @@ const Settings = () => {
 
             <div>
               <h1 className="font-bold">Account Settings</h1>
-              <p className="font-thin">Personal Information, Email</p>
+              <p className="font-thin text-sm">Personal Information, Email</p>
             </div>
 
           </div>
@@ -69,7 +73,7 @@ const Settings = () => {
         {/* Account settings link */}
         <div className="mb-5 flex flex-row flex-nowrap cursor-pointer justify-between border-b-2 pb-4 items-center hover:opacity-100 opacity-80">
 
-          <div className="flex flex-row items-center gap-5">
+          <div onClick={() => setIsOption(initial)} className="flex flex-row items-center gap-5">
 
             <div>
               <Image src={contact} width="40px" height="40px" alt="contact" />
@@ -77,7 +81,7 @@ const Settings = () => {
 
             <div>
               <h1 className="font-bold">Account Settings</h1>
-              <p className="font-thin">Personal Information, Email</p>
+              <p className="font-thin text-sm">Personal Information, Email</p>
             </div>
 
           </div>
@@ -89,15 +93,15 @@ const Settings = () => {
         {/* Account settings link */}
         <div className="mb-5 flex flex-row flex-nowrap cursor-pointer justify-between border-b-2 pb-4 items-center hover:opacity-100 opacity-80">
 
-          <div className="flex flex-row items-center gap-5">
+          <div onClick={() => setIsOption("parental")} className="flex flex-row items-center gap-5">
 
             <div>
               <Image src={contact} width="40px" height="40px" alt="contact" />
             </div>
 
             <div>
-              <h1 className="font-bold">Account Settings</h1>
-              <p className="font-thin">Personal Information, Email</p>
+              <h1 className="font-bold">Parental Controls</h1>
+              <p className="font-thin text-sm">Manage signed-in profiles</p>
             </div>
 
           </div>
@@ -117,7 +121,7 @@ const Settings = () => {
 
             <div>
               <h1 className="font-bold">Account Settings</h1>
-              <p className="font-thin">Personal Information, Email</p>
+              <p className="font-thin text-sm">Personal Information, Email</p>
             </div>
 
           </div>
@@ -130,43 +134,8 @@ const Settings = () => {
 
       </div>
       {/* Account Settings */}
+      {isOption === 'parental' ? <ParentalControl /> : <AccountSettings />}
 
-      <div className="pl-8 border-l-2">
-        <h1 className="font-bold text-xl pb-3 border-b-2 w-[300px]">Account Settings</h1>
-
-        <div className="flex flex-row mb-8 items-center mt-10 gap-10">
-
-          <div className="flex flex-col">
-            <label className="font-medium mb-3 text-[#292D32]">First Name</label>
-            <input type="text" placeholder="Opemipo" className="text-[#050729] text-lg font-medium px-5 py-3 border-2 bg-[#FAFAFA] rounded-lg text-[#050729] font-medium" />
-          </div>
-
-          <div className="flex flex-col">
-            <label className="font-medium mb-3 text-[#292D32]">Last Name</label>
-            <input type="text" placeholder="Disu" className="text-[#050729] font-medium text-lg px-5 py-3 border-2 bg-[#FAFAFA] rounded-lg text-[#050729]" />
-          </div>
-
-        </div>
-
-        <div className="flex flex-col mb-8">
-          <label className="font-medium mb-3 text-[#292D32]">Email</label>
-          <input type="email" placeholder="opedisu@email.com" className="font-medium text-lg text-[#050729] px-5 py-3 border-2 bg-[#FAFAFA] rounded-lg" />
-        </div>
-
-        <div className="flex flex-col">
-          <label className="font-medium mb-3 text-[#292D32]">Phone Number</label>
-          <input type="number" placeholder="+234 788888" className="font-medium text-lg text-[#050729] px-5 py-3 border-2 bg-[#FAFAFA] rounded-lg" />
-        </div>
-
-        <h1 onClick={() => setOpen(isOpen => !isOpen)} className="font-medium w-fit text-md mt-8 text-[#07092C] cursor-pointer underline">Change Password</h1>
-
-        <div className="w-[100%] grid mt-10 ">
-          <h1 className="text-white w-fit p-2 hover:shadow-lg rounded-lg justify-self-end px-5 py-3 font-medium cursor-pointer bg-[#060825]">Save Changes</h1>
-        </div>
-
-        {isOpen ? <ChangePasswordModal setOpen={setOpen} /> : null}
-
-      </div>
     </div>
   );
 };

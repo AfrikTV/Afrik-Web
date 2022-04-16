@@ -7,7 +7,7 @@ function ChangePasswordModal({ isOpen, setOpen }) {
     const router = useRouter();
     return (
         <div className='block w-[100%] h-[100%] fixed top-0 left-0 flex justify-center items-center z-40 bg-[rgba(0,0,0,0.36458333333333337)]' >
-            <div className='w-[60%] py-6 px-20 rounded-lg h-[90%] bg-white'>
+            <div className='ease duration-100 w-[60%] py-6 px-20 rounded-lg h-[90%] bg-white'>
                 <div className="inline-block w-[100%] text-right">
                     <Image src={closeBtn} width="30px" className="cursor-pointer" onClick={() => setOpen(isOpen => !isOpen)} height="30px" alt="closeBtn" />
                 </div>

@@ -4,7 +4,7 @@ import closeBtn from "../../../public/assets/images/close.svg"
 function SignOutModal({ isSignOut, setIsSignOut }) {
     return (
         <div className='block w-[100%] h-[100%] fixed top-0 left-0 flex justify-center items-center z-40 bg-[rgba(0,0,0,0.36458333333333337)]' >
-            <div className='flex flex-col justify-center items-center w-[30%] h-[50%] py-7 px-20 rounded-lg bg-white'>
+            <div className='ease duration-100 flex flex-col justify-center items-center w-[30%] h-[50%] py-7 px-20 rounded-lg bg-white'>
 
                 <h1 className="mb-3 font-bold text-2xl ">Sign out of AfrikTv</h1>
                 <h1 className="mb-3 font-medium font-2xl">Are you sure about signing out?</h1>
