@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&family=Inter&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 body {
-  /* background: rgba(249, 191, 58, 0.08); */
+  background: rgba(249, 191, 58, 0.08);
   /* filter: blur(450px); */
   background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
 }
 
-.hero-container{
+.home-container {
+  background: rgba(249, 191, 58, 0.08);
+}
+
+.hero-container {
   /* background-size: cover; */
   background-repeat: no-repeat;
   /* background-image: url('../public/bg.svg'); */
@@ -29,40 +33,38 @@ body {
   .auth-connect-heading {
     @apply text-5xl font-bold leading-loose font-AnonymousPro;
   }
-
-
 }
 
 .background-auth {
-  background-image: url('../public//assets//images/bg.svg');
+  background-image: url("../public//assets//images/bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
- .dashboard-container{
+.dashboard-container {
   width: 100%;
   padding-bottom: 1em;
   margin-left: 214px !important;
   background: #fff !important;
   margin-top: 6em;
-} 
+}
 
-.main{
+.main {
   padding-bottom: 1em;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input::-webkit-calendar-picker-indicator {
-  filter: invert(.5);
+  filter: invert(0.5);
 }
 
-.manCont:hover::before{
-  background-color: rgba(0,0,0,0.56458333333333337);
+.manCont:hover::before {
+  background-color: rgba(0, 0, 0, 0.56458333333333337);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,14 +74,13 @@ input::-webkit-calendar-picker-indicator {
   position: absolute;
   z-index: 10;
   border-radius: 10px;
-  background-image: url('../public/assets/images/edit.svg');
+  background-image: url("../public/assets/images/edit.svg");
   content: "";
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
-.manCont{
+.manCont {
   position: relative;
 }
