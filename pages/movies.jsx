@@ -10,6 +10,7 @@ function MoviesPage() {
       <VideoPlayer />
       <ActionAfricaMovies genres="Action African Movies" />
       <EmotionalAfricaMovies genres="Emotional African Movies" />
+      <EmotionalAfricaMovies genres="Emotional African Movies" />
     </div>
   )
 }

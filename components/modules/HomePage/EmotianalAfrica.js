@@ -6,24 +6,24 @@ import local3 from "../../../public/local3.png"
 
 function EmotionalAfricaMovies({genres}) {
     return (
-        <div className='flex flex-col  justify-center'>
-            <h1 className='text-xl font-[Inter] font-extrabold text-[#492406] mb-5'>{genres}</h1>
+        <div className='flex flex-col mb-24 justify-center'>
+            <h1 className='text-xl font-[Inter] font-extrabold text-[#492406] mb-10'>{genres}</h1>
 
             <div className='flex flex-row  gap-1 sm:gap-10'>
                 <div>
-                    <Image src={local1} alt="movies" width={120} height={180} />
+                    <Image src={local1} alt="movies" width={140} height={200} />
                 </div>
                 <div>
-                    <Image src={local2} alt="movies" width={120} height={180} />
+                    <Image src={local2} alt="movies" width={140} height={200} />
                 </div>
                 <div>
-                    <Image src={local1} alt="movies" width={120} height={180} />
+                    <Image src={local1} alt="movies" width={140} height={200} />
                 </div>
                 <div>
-                    <Image src={local2} alt="movies" width={120} height={180} />
+                    <Image src={local2} alt="movies" width={140} height={200} />
                 </div>
                 <div>
-                    <Image src={local3} alt="movies" width={120} height={180} />
+                    <Image src={local3} alt="movies" width={140} height={200} />
                 </div>
             </div>
         </div>

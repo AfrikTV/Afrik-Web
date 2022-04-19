@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Hero from '../components/modules/LandingPage/Hero';
 import Hero2 from '../components/modules/LandingPage/Hero2'
 
-
 export default function Home() {
   return (
     <div>

@@ -43,7 +43,7 @@ const Hero2 = () => {
           <h2 className="text-4xl lg:text-5xl font-black  text-primary ">
             Discover the Best Entertainment
           </h2>
-          <p className="font-semibold text-xl py-5">
+          <p className="font-semibold text-lg py-5">
             Whether you want to stream live TV or catch up on your <br /> missed
             shows, binge watch your favourite series with <br /> AfrikTV. Catch
             up with the fun in african movies and feel the <br /> passion of
@@ -72,7 +72,7 @@ const Hero2 = () => {
             <h2 className="text-4xl lg:text-5xl font-black  text-primary ">
               Discover the Best Entertainment
             </h2>
-            <p className="font-semibold text-xl py-5">
+            <p className="font-semibold text-lg py-5">
               Whether you want to stream live TV or catch up on your <br />{" "}
               missed shows, binge watch your favourite series with <br />{" "}
               AfrikTV. Catch up with the fun in african movies and feel the{" "}
@@ -138,7 +138,7 @@ const Hero2 = () => {
               <br />
               songs
             </h2>
-            <p className="font-semibold text-xl py-5">
+            <p className="font-semibold text-lg py-5">
               Whether you want to stream live TV or catch up on your <br />{" "}
               missed shows, binge watch your favourite series with <br />{" "}
               AfrikTV. Catch up with the fun in african movies and feel the{" "}

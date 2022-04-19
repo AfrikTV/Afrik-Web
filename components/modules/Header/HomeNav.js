@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 const HomeNavbar = () => {
   const { user } = useSelector((state) => state.loggedReducer);
   return (
-    <header className="flex flex-row font-['Poppins'] items-center justify-between p-10 max-w-[120rem] ">
+    <header className="flex flex-row font-['Poppins'] items-center justify-between p-10 max-w-[120rem]">
       <div className="logo cursor-pointer">
         <Link passHref href="/" >
           <Image src={Logo} alt="AFRIK TV logo" unoptimized />

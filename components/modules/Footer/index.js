@@ -3,13 +3,13 @@ import React from "react";
 import FrequentlyAskedQuestion from "./FrequentlyAskedQuestion.js";
 const Footer = () => {
   return (
-    <footer>
+    <footer className="font-[inter] inter" id="faq">
       <div className="faq bg-[#07092C]">
         <FrequentlyAskedQuestion />
       </div>
 
-      <div className="font-inter  subscribe-newsletter bg-[#060825] py-10 px-5 text-center ">
-        <h1 className="text-white font-bold text-4xl ">
+      <div className="font-inter subscribe-newsletter bg-[#060825] py-10 px-5 text-center ">
+        <h1 className="text-white font-bold text-3xl ">
           Subscribe to our newsletter
         </h1>
 

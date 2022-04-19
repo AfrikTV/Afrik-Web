@@ -13,7 +13,8 @@ module.exports = {
         colors: {
           primary: "#07092C",
           secondary: "#F39C11",
-          'greyColor': "rgba(171, 171, 171, 0.29)"
+          'greyColor': "rgba(171, 171, 171, 0.29)",
+          'blackTransparent': "rgba(37, 34, 34, 0.64)",
         },
   
         fontFamily: {
