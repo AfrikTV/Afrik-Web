@@ -18,11 +18,11 @@ const Header = () => {
           <li className="text-[22px] cursor-pointer">FAQ</li>
         </ol>
       </nav>{" "}
-      <Button>
+     { <Button>
         <Link href={"/signin"} passHref>
           Sign in
         </Link>
-      </Button>
+      </Button>}
     </header>
   );
 };

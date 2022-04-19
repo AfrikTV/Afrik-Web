@@ -1,15 +1,24 @@
 import React from "react";
+import "../styles/video-react.css"; // import css
 import "../styles/globals.css";
 import Layout from "../components/layouts";
 import DashboardLayout from "../components/layouts/DashboardLayout";
 import { wrapper, store } from "../store/store";
 import { Provider } from "react-redux";
+import HomeLayout from "../components/layouts/HomeLayout";
+
 
 function MyApp({ Component, pageProps, ...appProps }) {
   // removed the header and footer from the layout for auth pages
-  const isLayoutNeeded = [`/signin`, `/manageprofiles`, `/editprofile`, `/newprofile`, `/forgetpassword`  ,`/verify` , `/whoiswatching` , `/signup`].includes(
+  const isLayoutNeeded = [`/signin`, `/manageprofiles`, `/movies`, `/editprofile`, `/newprofile`, `/forgetpassword`, `/verify`, `/whoiswatching`, `/signup`].includes(
     appProps.router.pathname
   );
+
+  // removed the header from the homepage layout but the homepage has it own header
+  const isHomePage = [`/movies`].includes(
+    appProps.router.pathname
+  );
+
   // dashboard layout <<If there's a better way, you can implement it>>
   const isDashboardLayout = [
     `/dashboard`,
@@ -21,8 +30,8 @@ function MyApp({ Component, pageProps, ...appProps }) {
   const LayoutComponent = isDashboardLayout
     ? DashboardLayout
     : !isLayoutNeeded
-    ? Layout
-    : React.Fragment;
+      ? Layout
+      : HomeLayout;
 
   return (
     <>

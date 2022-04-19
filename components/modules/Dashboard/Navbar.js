@@ -1,3 +1,4 @@
+// Navbar for landing page layout
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import Image from "next/image";
@@ -13,7 +14,7 @@ const Navbar = () => {
   const [isSignOut, setIsSignOut] = useState(false);
   const { user } = useSelector((state) => state.loggedReducer);
   return (
-    <div className="fixed w-[96.5%] z-40 top-0 bg-white ">
+    <div className="fixed w-[96.5%] font-['Poppins'] z-40 top-0 bg-white ">
       <div className="flex items-center justify-between py-5">
         <Image src={logo} alt="Afrik Web Logo" unoptimized />
         <div className="flex items-center space-x-6">

@@ -13,12 +13,13 @@ import LocalTwoImage from "../../../public/local2.png";
 import LocalThreeImage from "../../../public/local3.png";
 
 import Button from "../../elements/Button";
+import Link from "next/link";
 const Hero2 = () => {
   return (
     <section className="py-20 px-10 font-inter">
       <div className=" mb-20">
         <div>
-          <h1 className=" text-center font-black text-4xl  text-primary">
+          <h1 className=" text-center font-black text-4xl text-primary">
             Get Unlimited access to African <br />
             movies
           </h1>
@@ -37,7 +38,7 @@ const Hero2 = () => {
           </div>
         </div>
       </div>
-      <div className="discover  grid grid-cols-1  lg:grid-cols-3 gap-1 lg:gap-32 items-center">
+      <div className="discover grid grid-cols-1  lg:grid-cols-3 gap-1 lg:gap-32 items-center ">
         <div className="discover-text col-span-2">
           <h2 className="text-4xl lg:text-5xl font-black  text-primary ">
             Discover the Best Entertainment
@@ -55,9 +56,11 @@ const Hero2 = () => {
         </div>
       </div>
 
-      <div className="discover-button py-10">
-        <Button>Watch Online</Button>
-      </div>
+      <Link passHref href="/movies" >
+        <div className="discover-button py-10">
+          <Button>Watch Online</Button>
+        </div>
+      </Link>
 
       <div className="your-favourite-movies my-16">
         <h1 className=" text-center text-primary font-black text-4xl lg:text-5xl">
