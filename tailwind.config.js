@@ -8,7 +8,7 @@ module.exports = {
         backgroundImage: (theme) => ({
           "c":
             "url('./public/bg.svg')",
-            "snake-bg" : "url('./public/assets/images/snake.svg')",
+            'snakeBg' : "url('../public/assets/images/snake.svg')",
         }),
         colors: {
           primary: "#07092C",
