@@ -27,8 +27,8 @@ const Billing = () => {
       {isOpen ? <AddNewCardModal setOpen={setOpen} /> : null}
 
       {/* Card */}
-      <div className="mb-10 w-96 text-white  bg-['snake-bg'] bg-bottom bg-contain bg-[#07092C] px-14 py-10 rounded-lg justify-between align-center">
-        <h1 className=" mb-5 text-lg">{user.name} Daisu</h1>
+      <div className="mb-10 w-96 text-white  bg-snakeBg bg-no-repeat bg-bottom bg-contain bg-[#07092C] px-14 py-10 rounded-lg justify-between align-center">
+        <h1 className=" mb-5 text-lg">{user.name} Disu</h1>
         <h1 className="mb-5 tracking-widest text-2xl font-bold">12345*****90</h1>
         <h1 className="">04/22</h1>
       </div>
