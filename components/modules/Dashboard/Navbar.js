@@ -7,6 +7,7 @@ import { IoMdNotificationsOutline, IoIosMenu } from "react-icons/io";
 import NotifyDropDown from "../../elements/Dropdown/Notifications";
 import ProfileDropDown from "../../elements/Dropdown/Profile";
 import SignOutModal from "../../elements/Modal/SignOut";
+import Link from "next/link";
 
 function Navbar({ isSidebar, setIsSidebar }) {
   const [isActive, setIsActive] = useState(false);
@@ -20,14 +21,16 @@ function Navbar({ isSidebar, setIsSidebar }) {
     <div className="fixed w-[96.5%] font-['Poppins'] z-40 top-0 bg-white ">
       <div className="flex items-center justify-between py-5">
         <div className="block sm:hidden cursor-pointer" onClick={() => {
-           setIsSidebar(isSidebar => !isSidebar)
+          setIsSidebar(isSidebar => !isSidebar)
         }}>
           <IoIosMenu />
         </div>
-        <Image src={logo} alt="Afrik Web Logo" unoptimized />
+        <Link href="/" passHref >
+          <Image src={logo} alt="Afrik Web Logo" unoptimized className='cursor-pointer' />
+        </Link>
         <div className="flex items-center space-x-6">
           <div>
-            <IoMdNotificationsOutline onClick={() => { setIsActive(isActive => !isActive); setIsState(isState => false); } } className="text-4xl cursor-pointer" />
+            <IoMdNotificationsOutline onClick={() => { setIsActive(isActive => !isActive); setIsState(isState => false); }} className="text-4xl cursor-pointer" />
           </div>
           <div className="">
             <Image
@@ -36,7 +39,7 @@ function Navbar({ isSidebar, setIsSidebar }) {
               alt={"profile-pic"}
               width={40}
               height={40}
-              onClick={() => { setIsActive(false); setIsState(isState => !isState) } } />
+              onClick={() => { setIsActive(false); setIsState(isState => !isState) }} />
           </div>
         </div>
         {isActive ? <NotifyDropDown isActive setIsActive={setIsActive} /> : null}

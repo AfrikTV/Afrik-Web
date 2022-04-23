@@ -133,7 +133,7 @@ const Settings = () => {
 
 
       </div>
-      {/* Account Settings */}
+      {/* Component to render according to option clicked by the user */}
       {isOption === 'parental' ? <ParentalControl /> : <AccountSettings />}
 
     </div>

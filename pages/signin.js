@@ -2,6 +2,8 @@ import React from "react";
 import userImg from "../public/user.png";
 import Image from "next/image";
 import Link from 'next/link'
+
+
 const signin = (props) => {
   return (
     <div className="h-screen font-inter  ">
@@ -42,7 +44,7 @@ const signin = (props) => {
             </div>
 
             <div className="py-4">
-              <p className="text-primary text-xl font-semibold">
+              <p className="text-primary text-md font-semibold">
                 <Link href="/forgetpassword">Forgotten Password ?</Link>
               </p>
             </div>

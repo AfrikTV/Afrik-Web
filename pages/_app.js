@@ -3,9 +3,9 @@ import "../styles/video-react.css"; // import css
 import "../styles/globals.css";
 import Layout from "../components/layouts";
 import DashboardLayout from "../components/layouts/DashboardLayout";
+import HomeLayout from "../components/layouts/HomeLayout";
 import { wrapper, store } from "../store/store";
 import { Provider } from "react-redux";
-import HomeLayout from "../components/layouts/HomeLayout";
 
 
 function MyApp({ Component, pageProps, ...appProps }) {
@@ -14,8 +14,7 @@ function MyApp({ Component, pageProps, ...appProps }) {
     appProps.router.pathname
   );
 
-  // removed the header from the homepage layout but the homepage has it own header
-  const isHomePage = [`/movies`].includes(
+  const isHome = [ `/movies`].includes(
     appProps.router.pathname
   );
 
@@ -28,10 +27,13 @@ function MyApp({ Component, pageProps, ...appProps }) {
   ].includes(appProps.router.pathname);
 
   const LayoutComponent = isDashboardLayout
-    ? DashboardLayout
-    : !isLayoutNeeded
-      ? Layout
-      : HomeLayout;
+  ? DashboardLayout
+  : !isLayoutNeeded
+  ? Layout
+  : isHome
+  ? HomeLayout
+  :React.Fragment;
+
 
   return (
     <>
