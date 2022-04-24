@@ -20,9 +20,7 @@ function Navbar({ isSidebar, setIsSidebar }) {
   return (
     <div className="fixed w-[96.5%] font-['Poppins'] z-40 top-0 bg-white ">
       <div className="flex items-center justify-between py-5">
-        <div className="block sm:hidden cursor-pointer" onClick={() => {
-          setIsSidebar(isSidebar => !isSidebar)
-        }}>
+        <div className="block sm:hidden cursor-pointer">
           <IoIosMenu />
         </div>
         <Link href="/" passHref >

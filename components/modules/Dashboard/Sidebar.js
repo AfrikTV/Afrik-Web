@@ -34,7 +34,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center fixed bg-white h-[100vh] top-20 left-0 w-48 grid-rows-5 gap-5">
+    <div className="flex flex-col items-center justify-center fixed bg-white h-[100vh] top-1 left-0 w-48 grid-rows-5 gap-5">
       <Link href={"/dashboard"} passHref>
         <SidebarItem
         
