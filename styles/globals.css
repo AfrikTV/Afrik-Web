@@ -58,14 +58,6 @@ body {
   background-size: cover;
 }
 
-.dashboard-container {
-  width: 100%;
-  padding-bottom: 1em;
-  margin-left: 214px !important;
-  background: #fff !important;
-  margin-top: 6em;
-}
-
 .main {
   padding-bottom: 1em;
 }

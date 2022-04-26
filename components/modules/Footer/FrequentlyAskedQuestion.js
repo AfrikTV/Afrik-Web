@@ -25,7 +25,7 @@ const FrequentlyAskedQuestion = () => {
         </button>
       </div>
 
-      <div className="faq">
+      <div className="faq ease-in duration-200">
         <Accordion />
       </div>
     </div>

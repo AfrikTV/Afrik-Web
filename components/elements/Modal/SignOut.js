@@ -15,7 +15,7 @@ function SignOutModal({ isSignOut, setIsSignOut }) {
                 </div>
 
                 <div onClick={() => setIsSignOut(isSignOut => !isSignOut)} className="w-[100%] grid">
-                    <h1 className="text-[#060825] w-max border-2 border-[#060825] justify-self-center text-center px-10 cursor-pointer py-2 font-medium rounded-lg mt-5 bg-white hover:shadow-lg">
+                    <h1 className="text-[#060825] w-max justify-self-center text-center px-10 cursor-pointer py-2 font-medium mt-5 bg-white ">
                         Cancel
                     </h1>
                 </div>

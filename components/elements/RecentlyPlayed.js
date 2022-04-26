@@ -10,7 +10,7 @@ function RecentlyPlayed({setIsHome}) {
     <div className=''>
         <div onClick={() => setIsHome('HOME')} className="mb-10 flex flex-row gap-2 items-center ">
           <Image  src={arrow} className="cursor-pointer" alt="arrow" width="20px" height="20px" />
-          <p className="text-xl font-bold">Watch Later</p>
+          <p className="text-xl font-bold">Recently Played</p>
         </div>
 
         <div className='flex flex-row items-center gap-8'>

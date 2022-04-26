@@ -4,6 +4,8 @@ import { AiFillCreditCard } from "react-icons/ai";
 import { FiActivity } from "react-icons/fi";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import logo from "../../../public/assets/images/logo.png";
+import { IoIosMenu } from "react-icons/io";
 import {
   home,
   billing,
@@ -11,12 +13,23 @@ import {
   settings,
 } from "../../../store/actions/section";
 import Link from "next/link";
+import Image from "next/image";
+import { setClose } from "../../../store/actions/isSidebar";
 
 
 const Sidebar = () => {
   const currentSection = useSelector((state) => state.sectionReducer);
+  const isSidebarOpen = useSelector((state) => state.sidebarReducer);
   const dispatch = useDispatch();
 
+  // Function to dispatch side responsive actions
+
+  const handleClose = () => {
+    dispatch(setClose());
+  }
+
+
+  // Functions to dispatch sidebar section actions
   const homeClick = () => {
     dispatch(home());
   };
@@ -30,86 +43,81 @@ const Sidebar = () => {
   };
 
   const settingsClick = () => {
-    dispatch(settings());
+    dispatch(settings())
   };
 
   return (
-    <div className="flex flex-col items-center justify-center fixed bg-white h-[100vh] top-1 left-0 w-48 grid-rows-5 gap-5">
+    <div className={`${isSidebarOpen === "open" ? "left-0 items-start justify-start" : "left-[-180px]"} duration-100 ease-in-out pt-7 h-[100vh] gap-5 bg-white pl-5 flex fixed left-0 top-0 z-[70] md:top-20 w-52 md:z-[30] md:left-0 flex-col`}>
+      <div className="flex flex-row gap-5 md:hidden items-center">
+        <IoIosMenu onClick={handleClose} size={30} className="cursor-pointer" />
+        <Image src={logo} width={110} height={20} alt="logo" />
+      </div>
       <Link href={"/dashboard"} passHref>
         <SidebarItem
-        
-          onClick={homeClick}
-          customStyle={`row-start-2 group ${
-            currentSection === "home" ? "bg-gray-50" : ""
-          }`}
+          // Todo: implement this!
+          className={`${isSidebarOpen === "open" ? "bg" : "bg"}`}
+
+          onClick={() => { homeClick(); handleClose() }}
+          customStyle={`row-start-2 group ${currentSection === "home" ? "bg-gray-50" : ""
+            }`}
           text="Home"
-          textCustomStyle={`${
-            currentSection === "home" ? "text-[#07092C]" : "text-gray-500"
-          }`}
+          textCustomStyle={`${currentSection === "home" ? "text-[#07092C]" : "text-gray-500"
+            }`}
         >
           <RiHomeSmile2Fill
-            className={`text-3xl group-hover:text-[#07092C] ${
-              currentSection === "home" ? "text-[#07092C]" : "text-gray-500"
-            }`}
+            className={`text-2xl group-hover:text-[#07092C] ${currentSection === "home" ? "text-[#060825]" : "text-gray-500 "
+              }`}
           />
         </SidebarItem>
       </Link>
 
       <Link href={"/dashboard/billing"} passHref>
         <SidebarItem
-          onClick={billingClick}
-          customStyle={`row-start-2 group ${
-            currentSection === "billing" ? "bg-gray-50" : ""
-          }`}
+          onClick={() => { billingClick(); handleClose() }}
+          customStyle={`row-start-2 group ${currentSection === "billing" ? "bg-gray-50" : ""
+            }`}
           text="Billing"
-          textCustomStyle={`${
-            currentSection === "billing" ? "text-[#07092C]" : "text-gray-500"
-          }`}
+          textCustomStyle={`${currentSection === "billing" ? "text-[#07092C]" : "text-gray-500"
+            }`}
         >
           <AiFillCreditCard
-            className={`text-3xl group-hover:text-[#07092C] ${
-              currentSection === "billing" ? "text-[#07092C]" : "text-gray-500"
-            }`}
+            className={`text-2xl group-hover:text-[#07092C] ${currentSection === "billing" ? "text-[#060825]" : "text-gray-500"
+              }`}
           />
         </SidebarItem>
       </Link>
 
       <Link href={"/dashboard/activities"} passHref>
         <SidebarItem
-          onClick={activitiesClick}
-          customStyle={`row-start-2 group ${
-            currentSection === "activities" ? "bg-gray-50" : ""
-          }`}
+          onClick={() => { activitiesClick(); handleClose() }}
+          customStyle={`row-start-2 group ${currentSection === "activities" ? "bg-gray-50" : ""
+            }`}
           text="Activities"
-          textCustomStyle={`${
-            currentSection === "activities" ? "text-[#07092C]" : "text-gray-500"
-          }`}
+          textCustomStyle={`${currentSection === "activities" ? "text-[#07092C]" : "text-gray-500"
+            }`}
         >
           <FiActivity
-            className={`text-3xl group-hover:text-[#07092C] ${
-              currentSection === "activities"
-                ? "text-[#07092C]"
-                : "text-gray-500"
-            }`}
+            className={`text-2xl group-hover:text-[#07092C] ${currentSection === "activities"
+              ? "text-[#060825]"
+              : "text-gray-500"
+              }`}
           />
         </SidebarItem>
       </Link>
 
       <Link href={"/dashboard/settings"} passHref>
         <SidebarItem
-          onClick={settingsClick}
-          customStyle={`row-start-2 group ${
-            currentSection === "settings" ? "bg-gray-50" : ""
-          }`}
+
+          onClick={() => { settingsClick(); handleClose() }}
+          customStyle={`group ${currentSection === "settings" ? "bg-gray-50" : ""
+            }`}
           text="Settings"
-          textCustomStyle={`${
-            currentSection === "settings" ? "text-[#07092C]" : "text-gray-500"
-          }`}
+          textCustomStyle={`${currentSection === "settings" ? "text-[#07092C]" : "text-gray-500"
+            }`}
         >
           <RiSettingsFill
-            className={`text-3xl group-hover:text-[#07092C] ${
-              currentSection === "settings" ? "text-[#07092C]" : "text-gray-500"
-            }`}
+            className={`text-2xl group-hover:text-[#07092C] ${currentSection === "settings" ? "text-[#060825]" : "text-gray-500"
+              }`}
           />
         </SidebarItem>
       </Link>

@@ -13,14 +13,11 @@ const activities = () => {
 const settings = () => {
   return { type: "SETTINGS" };
 };
-const watchLater = () => {
-  return { type: "WATCH_LATER" };
-};
+
 
 module.exports = {
   home,
   billing,
   activities,
   settings,
-  watchLater,
 };

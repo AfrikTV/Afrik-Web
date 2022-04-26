@@ -9,12 +9,12 @@ function ProfileDropDown({ isSignOut, setIsSignOut, isState, setIsState }) {
     return (
         <div className='fixed dropdown ease duration-200 gap-3 items-center py-5 rounded-md z-[50] bg-white shadow-lg top-20 right-2 w-[150px] flex flex-col'>
             {/* Profile Cards */}
-            <div className='flex gap-2 flex-row items-center px-2 cursor-pointer' onClick={() => setIsState(isState => !isState)}>
+            <div className='flex gap-2 flex-row items-center px-2 cursor-pointer' onClick={() => setIsState(!isState)}>
                 <Image src={notiImage} height="35px" alt="notification images" />
                 <h1 className='font-medium text-[#050729] text-sm leading-4'>Anna</h1>
             </div>
             {/* Profile Cards */}
-            <div className='flex gap-2 mb-2 flex-row items-center cursor-pointer' onClick={() => setIsState(isState => !isState)}>
+            <div className='flex gap-2 mb-2 flex-row items-center cursor-pointer' onClick={() => setIsState(!isState)}>
                 <Image src={notiImage} height="35px" alt="notification images" />
                 <h1 className='font-medium text-[#050729] text-sm leading-4'>Anna</h1>
             </div>
@@ -25,7 +25,7 @@ function ProfileDropDown({ isSignOut, setIsSignOut, isState, setIsState }) {
             </div>
 
             {/* Sign Out Card */}
-            <div div className='cursor-pointer w-[100%]' onClick={() => { setIsSignOut(isSignOut => !isSignOut); setIsState(isState => !isState)  }}>
+            <div div className='cursor-pointer w-[100%]' onClick={() => { setIsSignOut(!isSignOut); setIsState(isState => !isState)  }}>
                 <p className='text-sm font-medium text-[#050729] w-[100%] text-center'>Sign out</p>
             </div >
 

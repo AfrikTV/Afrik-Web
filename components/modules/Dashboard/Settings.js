@@ -15,7 +15,7 @@ const Settings = () => {
   const [isOption, setIsOption] = useState(initial);
   const router = useRouter();
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row flex-wrap">
 
       <div className="pr-5">
 
@@ -31,7 +31,7 @@ const Settings = () => {
         </div>
 
         {/* Account settings link */}
-        <div className="mb-5 flex flex-row  flex-nowrap cursor-pointer justify-between border-b-2 pb-4 items-center hover:opacity-100 opacity-80">
+        <div className="mb-5 flex flex-row flex-nowrap cursor-pointer justify-between border-b-2 pb-4 items-center hover:opacity-100 opacity-80">
 
           <div className="flex flex-row items-center gap-5">
 
