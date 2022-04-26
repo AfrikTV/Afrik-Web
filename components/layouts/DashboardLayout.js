@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
     getUser();
   }, [dispatch]);
   return (
-    <div className="h-screen max-w-[90rem] mx-auto ">
+    <div className="h-screen max-w-[90rem] mx-auto">
       {/* Navbar */}
       <Navbar img={user.avatar} />
 
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
         {/* Sidebar */}
         <Sidebar />
         {/* Main */}
-        <div className={`${isSidebar === 'open' ? "overflow-hidden before:bg-[rgba(0,0,0,0.36458333333333337)] z-[49] before:fixed before:w-[100vw] before:h-[100vh] before:top-0" : "before:fixed  before:w-[100vw] before:bg-blue-500"} "w-full pb-[1em] relative ml-0 md:ml-[214px] bg-white mt-[6em]"}`}>{children}</div>
+        <div className={`${isSidebar === 'open' ? "overflow-hidden before:bg-[rgba(0,0,0,0.36458333333333337)] z-[49] before:fixed before:w-[100vw] before:h-[100vh] before:top-0" : "before:fixed before:w-[100vw]"} "w-full pb-[1em] relative ml-0 md:ml-[210px] bg-white mt-[6em]"}w-full mt-[6em]`}>{children}</div>
       </div>
     </div>
   );
