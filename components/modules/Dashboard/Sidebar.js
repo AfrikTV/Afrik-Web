@@ -47,7 +47,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className={`${isSidebarOpen === "open" ? "left-0 items-start justify-start" : "left-[-180px]"} duration-100 ease-in-out pt-7 h-[100vh] gap-5 bg-white pl-5 flex fixed left-0 top-0 z-[70] md:top-20 w-52 md:z-[30] md:left-0 flex-col`}>
+    <div className={`${isSidebarOpen === "open" ? "left-0 items-start justify-start" : "left-[-180px]"} euclid-circular duration-100 ease-in-out pt-7 h-[100vh] gap-5 bg-white pl-5 flex fixed left-0 top-0 z-[70] md:top-20 w-52 md:z-[30] md:left-0 flex-col`}>
       <div className="flex flex-row gap-5 md:hidden items-center">
         <IoIosMenu onClick={handleClose} size={30} className="cursor-pointer" />
         <Image src={logo} width={110} height={20} alt="logo" />

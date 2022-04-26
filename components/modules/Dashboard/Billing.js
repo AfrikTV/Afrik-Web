@@ -12,7 +12,7 @@ const Billing = () => {
 
   return (
     <div className="pb-12">
-      <div className="flex flex-row mb-5 w-5/6 justify-between">
+      <div className="flex flex-row mb-5 w-full justify-between">
         <div className="flex flex-row gap-2 items-center ">
           <Image src={arrow} onClick={() => { router.back() }} className="cursor-pointer" alt="arrow" width="25px" height="25px" />
           <p className="text-xl font-bold">Billings</p>
@@ -37,7 +37,7 @@ const Billing = () => {
         <h1 className="font-medium mb-7 text-lg">Pricing</h1>
 
         {/*Pricing Card */}
-        <div className="flex flex-row w-5/6 flex-wrap gap-10 justify-between items-center">
+        <div className="flex flex-row w-full flex-wrap gap-10 justify-between items-center">
           <div className="w-48 text-center p-5 rounded-xl shadow-2xl">
             <h1 className="mb-2 text-xl font-bold">Normal</h1>
             <p className="font-medium text-[#050729]">N300</p>

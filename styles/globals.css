@@ -8,16 +8,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Euclid Circular";
+  src: local("Euclid Circular Medium"), local("Euclid-Circular-Medium"),
+    url("../public/assets/fonts/eculid-circular/EuclidCircularA-Medium.woff2") format("woff2"),
+    url("../public/assets/fonts/eculid-circular/EuclidCircularA-Medium.woff") format("woff"),
+    url("../public/assets/fonts/eculid-circular/EuclidCircularA-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 html,
 * {
   scroll-behavior: smooth;
 }
 
 body {
-
   /* filter: blur(450px); */
   background-repeat: no-repeat;
-  font-family: "Inter", sans-serif !important;
   scroll-behavior: smooth;
 }
 
@@ -25,6 +33,14 @@ body {
   background: rgba(249, 191, 58, 0.08);
   margin: 0;
   padding: 0;
+}
+
+.dashbaord-container {
+  font-family: "Euclid Circular", sans-serif !important;
+}
+
+.euclid-circular {
+  font-family: "Euclid Circular", sans-serif !important;
 }
 
 .hero-container {

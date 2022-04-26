@@ -29,14 +29,13 @@ function HomeSection({ isHome, setIsHome }) {
     ["2007", 1030, 540]
   ];
   const { user } = useSelector((state) => state.loggedReducer);
-
   return (
 
     <div className="">
       {/* User */}
-      <h1 className="font-bold text-xl">{`Hi, ${user.name}`}</h1>
+      <h1 className="font-bold text-2xl">{`Hi, ${user.name}`}</h1>
       {/* Plan */}
-      <div className="w-full flex flex-row flex-wrap gap-10 items-stretch py-10 justify-start">
+      <div className="w-full flex flex-row flex-wrap gap-16 items-stretch py-10 justify-start">
         {/* Cards */}
         <div className="w-96 text-white bg-[#07092C] bg-snakeBg bg-no-repeat bg-bottom p-10 rounded-lg justify-between align-center">
           <div className="flex mb-5 flex-row justify-between align-center">
@@ -56,7 +55,7 @@ function HomeSection({ isHome, setIsHome }) {
 
       </div>
 
-      <div className="flex flex-wrap w-full mt-5 flex-row justify-between">
+      <div className="flex flex-wrap w-full mt-5 flex-row gap-10">
         <div className="w-[450px] mb-10 sm:mb-0">
           <h1 className="mb-6 text-xl font-bold">Premium</h1>
 
