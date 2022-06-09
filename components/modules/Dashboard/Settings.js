@@ -11,11 +11,10 @@ import AccountSettings from "../../AccountSettings";
 
 const Settings = () => {
   const initial = "accountSetting";
-  const [isOpen, setOpen] = useState(false);
   const [isOption, setIsOption] = useState(initial);
   const router = useRouter();
   return (
-    <div className="flex flex-row flex-wrap">
+    <div className="flex flex-row sm:flex-nowrap flex-wrap">
 
       <div className="pr-5">
 

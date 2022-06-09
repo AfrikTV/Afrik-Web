@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         getUser();
     }, [dispatch]);
     return (
-        <><div className=" mx-auto">
+        <><div className="mx-auto">
             {/* Navbar */}
             <HomeNavbar img={user.avatar} />
 
@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
             <div className="flex space-x-20">
 
                 {/* Main */}
-                <div className="homepage-container">{children}</div>
+                <div className="">{children}</div>
             </div>
 
         </div><Footer /></>

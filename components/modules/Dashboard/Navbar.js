@@ -23,7 +23,7 @@ function Navbar() {
   }
 
   return (
-    <div className="fixed w-[100%] left-0 font-['Poppins'] z-[40] top-0 bg-white px-5">
+    <div className="fixed w-[100%] left-0 font-['Poppins'] z-[40] top-0 bg-white px-10">
       <div className="flex items-center justify-between py-5">
         <div className='flex flex-row gap-5 items-center'>
           <IoIosMenu onClick={handleOpen} size={30} className="block md:hidden cursor-pointer" />

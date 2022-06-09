@@ -1,9 +1,14 @@
 //  @type {import('next').NextConfig} 
-const nextConfig = {
+const withPWA = require('next-pwa');
+
+module.exports = withPWA({
   reactStrictMode: true,
   images: {
     domains: ["cloudflare-ipfs.com"],
   },
-};
-
-module.exports = nextConfig;
+  pwa: {
+    dest: 'public',
+    register: true,
+    skipWaiting: true,
+  }
+});

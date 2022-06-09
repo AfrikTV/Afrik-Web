@@ -18,9 +18,12 @@ module.exports = {
         },
   
         fontFamily: {
-          inter: ["Inter var", "sans-serif"],
+          inter: ["Inter", "sans-serif"],
           AnonymousPro: ["Anonymous Pro", "monospace"],
           Poppins: ["Poppins", "sans-serif"],
+        },
+        transitionTimingFunction: {
+          "ease-cubic": "cubic-bezier(0.4, 0, 0.2, 1)",
         },
       },
   

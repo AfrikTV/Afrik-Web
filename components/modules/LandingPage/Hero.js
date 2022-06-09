@@ -4,6 +4,7 @@ import HeroImage2 from "../../../public/heroimage2.png";
 import Image from "next/image";
 import DownloadFromAppstore from "../../../public/download-from-appstore.png";
 import DownloadFromPlaystore from "../../../public/download-from-playstore.png";
+
 const Hero = () => {
   return (
     <section className="py-20 lg:px-10 px-4 font-inter hero-container hero-pattern">
@@ -33,12 +34,12 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hero-image lg:flex space-x-10 hidden  ">
+        <div className="hero-image lg:flex space-x-10 hidden">
           <div>
             <Image
               src={HeroImage}
               alt="hero image"
-              blurDataURL={HeroImage}
+              blurDataURL="blur"
               placeholder="blur"
               className="self-end"
             />
@@ -48,7 +49,7 @@ const Hero = () => {
             <Image
               src={HeroImage2}
               alt="hero image"
-              blurDataURL={HeroImage2}
+              blurDataURL="blur"
               placeholder="blur"
               className="self-end"
             />

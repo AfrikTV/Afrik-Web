@@ -1,0 +1,17 @@
+{
+    "theme_color": "#07092C",
+    "background_color": "#07092C",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "AFRIK TV APP",
+    "description": "Online African Streaming App",
+    "short_name": "AFRIK TV",
+    "icons": [
+        {
+            "src": "/nextks.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

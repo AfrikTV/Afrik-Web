@@ -9,8 +9,8 @@ const ParentalControl = () => {
 
     return (
         <>
-            <div className="pl-8 border-l-2 w-[50%]">
-                <h1 className="font-bold text-xl mb-10 pb-3 border-b-2 w-[300px]">Parental Control</h1>
+            <div className="pl-8 border-l-2 w-[500px]">
+                <h1 className="font-bold text-xl mb-10 w-max pb-3 border-b-2 ">Parental Control</h1>
 
                 {/* {Parental Control Personal Card} */}
                 <div className="mb-5 flex flex-row flex-nowrap cursor-pointer justify-between border-b-2 pb-2 items-center">

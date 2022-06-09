@@ -14,7 +14,7 @@ function NewProfile() {
 
       <div className="">
 
-        <div className='flex mb-5 items-center gap-10 flex-row'>
+        <div className='flex flex-wrap sm:flex-nowrap justify-center mb-5 items-center gap-10 flex-row'>
           <div className="manCont cursor-pointer"  onClick={() => setIsAddImage(isAddImage => !isAddImage)}>
           <Image src={profile} width={120} height={120} alt="profile" />
           </div>
@@ -26,7 +26,7 @@ function NewProfile() {
           <p>This is a child`s profile</p>
         </div>
 
-        <div className="w-[100%] justify-center gap-10 items-center flex flex-row">
+        <div className="w-[100%] mt-10 justify-center gap-5 sm:gap-10 items-center flex-wrap flex flex-row">
           <div>
             <h1 className="text-white w-[150px] text-center px-5 cursor-pointer py-3 font-medium rounded-lg mt-5 bg-[#060825] hover:shadow-lg">
               Add Profile

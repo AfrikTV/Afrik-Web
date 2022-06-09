@@ -9,12 +9,13 @@ import { Provider } from "react-redux";
 
 
 function MyApp({ Component, pageProps, ...appProps }) {
+
   // removed the header and footer from the layout for auth pages
   const isLayoutNeeded = [`/signin`, `/manageprofiles`, `/movies`, `/editprofile`, `/newprofile`, `/forgetpassword`, `/verify`, `/whoiswatching`, `/signup`].includes(
     appProps.router.pathname
   );
 
-  const isHome = [ `/movies`].includes(
+  const isHome = [`/movies`].includes(
     appProps.router.pathname
   );
 
@@ -27,12 +28,12 @@ function MyApp({ Component, pageProps, ...appProps }) {
   ].includes(appProps.router.pathname);
 
   const LayoutComponent = isDashboardLayout
-  ? DashboardLayout
-  : !isLayoutNeeded
-  ? Layout
-  : isHome
-  ? HomeLayout
-  :React.Fragment;
+    ? DashboardLayout
+    : !isLayoutNeeded
+      ? Layout
+      : isHome
+        ? HomeLayout
+        : React.Fragment;
 
 
   return (

@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 function ProfileDropDown({ isSignOut, setIsSignOut, isState, setIsState }) {
     const router = useRouter();
     return (
-        <div className='fixed dropdown ease duration-200 gap-3 items-center py-5 rounded-md z-[50] bg-white shadow-lg top-20 right-2 w-[150px] flex flex-col'>
+        <div className='fixed transition-all dropdown delay-75 [ease-cubic] ease-cubic duration-600 gap-3 items-center py-5 rounded-md z-[50] bg-white shadow-lg top-20 right-6 w-[150px] flex flex-col'>
             {/* Profile Cards */}
             <div className='flex gap-2 flex-row items-center px-2 cursor-pointer' onClick={() => setIsState(!isState)}>
                 <Image src={notiImage} height="35px" alt="notification images" />
